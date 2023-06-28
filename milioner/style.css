@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,800;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    font-size: 20px;
+    background: linear-gradient(to top right, #0c8eb6, #2bcf5c);
+    min-height: 100vh;
+    color:#000;
+}
+.header-title{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color:#fff;
+    margin-bottom: 40px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 40px;
+  }
+.container{
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+    border-radius: 15px;
+}
+.container-score{
+    background-color: #0b58a7;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;/* top right bottom*/
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+/* .question{
+    display: none;
+} */
+.question.active{
+    display: block;
+}
+.question h4{
+    margin: 0 0 15px;
+    font-size: 20px;   
+}
+.answer{
+    position: relative;
+    margin-bottom: 10px;
+}
+.answer input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+.answer span{
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+.answer:hover span{
+    background-color: #9ab5ac;
+}
+.answer input:checked + span{
+    background-color: #f93c3c;
+    color: #fff;
+}
+.answer input[valid]:checked + span{
+    background-color: green;
+    color: #fff;
+}
+.skip-btn{
+    padding: 10px 0 0;
+    text-align: right;
+}
+.btn1{
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #0b58a7;
+    color:#fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.btn1:hover{
+    background-color: #064484;
+}
+.try{
+    margin-bottom: 30px;
+
+}
